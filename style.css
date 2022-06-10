@@ -1,0 +1,218 @@
+/* CSS Variables */
+:root {
+  --pry-color: #1560bd;
+  --pry-bold-color: #023676;
+  --sec-color: #f1f6fd;
+  --sec-bold-color: #c6dcf8;
+  --dark-color: #000;
+  --dark-hover-color: #1d1d1d;
+  --light-color: #fff;
+  --grey-color: #fbfbfe80;
+}
+/* CSS Variables */
+
+/* Global Usage */
+
+body {
+  background-color: var(--sec-color);
+  line-height: 1.8;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.flex-row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+.column {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+/* Global Usage */
+
+/* Navbar */
+nav {
+background-color: var(--pry-color);
+color: var(--light-color);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.1rem 2rem;
+}
+.nav-item {
+  list-style: none;
+  padding: 0rem 1rem;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.logo {
+  /* border: 1px solid white; */
+  padding: .4rem 1rem;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 2rem;
+  color: #1560bd;
+  
+}
+/* Navbar */
+
+/* Showcase */
+.showcase {
+  margin-top: 3rem;
+}
+
+.showcase img {
+  border-radius: 1rem;
+}
+
+.showcase .showcase-text {
+  padding: 0 5rem;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+}
+.showcase p {
+  font-size: 1.5rem;
+}
+/* Showcase */
+
+/* About */
+.about {
+  margin-top: 3rem;
+  background-color: var(--sec-bold-color);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  border-radius: 1rem;
+}
+
+.about .showcase-text {
+  padding: 0 5rem;
+}
+
+.showcase-text .card {
+  height: 100%;
+}
+
+.about hr {
+    border-top: var(--pry-bold-color) solid 1px;
+    width: 100%;
+    display: none;
+}
+/* About */
+
+/* Contact */
+ul {
+  display: flex;
+  justify-content: center;
+}
+.icon {
+font-size: 2rem;
+color: #fff;
+background-color: #023676;
+border-radius: 6rem;
+padding: .5rem;
+transition: .5s ease;
+border: 1px dotted transparent;
+
+}
+.icon:hover {
+background-color: transparent;
+color: #023676;
+border: 1px solid #023676;
+
+
+}
+/* Contact */
+
+/* Media Query for Mobile device */
+/* Media Query for Mobile device */
+
+@media screen and (max-width: 780px) {
+  /* Showcase */
+  .showcase .showcase-text {
+    padding: 0 0.5rem;
+  }
+
+  .showcase .text-center-md{
+    text-align: center ;
+  }
+
+  .showcase img {
+    width: 100%;
+  }
+  /* Showcase */
+
+  /* About */
+  .about .showcase-text {
+    padding: 0 0.5rem;
+  }
+  /* About */
+}
+
+@media screen and (max-width: 580px) {
+  /*Global  */
+  .flex-row {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .showcase .flex-row {
+    flex-direction: column-reverse;
+  }
+  /*Global  */
+
+  /* Nav */
+  .nav-list .flex-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  /* Nav */
+
+  .about hr {
+    border-top: var(--pry-bold-color) solid 1px;
+    width: 100%;
+    display: block;
+}
+}
+
+/* Media Query for Mobile device */
+/* Media Query for Mobile device */
